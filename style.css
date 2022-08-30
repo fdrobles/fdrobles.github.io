@@ -9,3 +9,8 @@ h1 {
 .text{
     color: black;
 }
+
+#ww {
+    width:300px;
+    height: auto;
+}
