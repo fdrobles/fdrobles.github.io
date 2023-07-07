@@ -2,71 +2,178 @@
 
 <html lang="en">
 
+<head>
+    <link rel="stylesheet" href="webstyle.css">
+</head>
 
-    <head>
+<body onload="lastOpened()">
+<div id="main">
+<div class="topHeader">
+<div id="nav">
+    <a class="navbarHome" href="javascript:goHome()">Home</a>
+    <a class="navbarItems" href="javascript:goProjects()">Projects</a>
+    <a class="navbarItems" href="https://fdrobles.github.io/">Resume</a>
+    <a class="navbarItems" href="javascript:goReferences()">References</a>
+    <a class="navbarItems" href="javascript:goCertifications()">Certifications</a>
+    <a class="navbarItems" href="javascript:goContact()">Contact</a>
+</div>
 
-        <meta charset="UTF-8">
+</div>
 
-        <title>Francisco Robles</title>
+<div id="contentHeader">
+    <p class="home" id="headerTitle1">Welcome to my page!</p>
+    <p class="home" id="subSection1">A little about me</p>
+    <p class="projects" id= "headerTitle2">Projects</p>
+    <p class="references" id="headerTitle3">References</p>
+    <p class="certifications" id="headerTitle4">Certifications</p>
+    <p class="contact" id="headerTitle5">Contact Me</p>
+</div>
 
-        <link rel="stylesheet" href="style.css">
+<img class="home" id = "profilePic" src="https://media.licdn.com/dms/image/D4E03AQHWynEI1tfU4g/profile-displayphoto-shrink_100_100/0/1666389116174?e=1694044800&v=beta&t=xHuDfOQaNbY6o0wZhaYuDEctUBYLaTsH3g_j6PASxls"
+ style="scale: .75;">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+<div class="home" id="content" style="width: 60%;">
+    <p class="contentHeader">Francisco Robles</p>
+    <p class="contentFill">My name is Francisco Robles and I am a recent graudate from Arizona State University.
 
-    <body>
-        <div style = "text-align: center;">
-            <div style = "display:inline-block; text-align: left;">
-        <div>
-            <h1><center>Francisco D. Robles</center></h1>
-            <p><center>Avondale, Arizona 85392<br>(602)402-2841<br>Robles159357@gmail.com</center></p>
-        </div>
-        <!--<div>
-            <h2><u>About Me</u></h2>
-            <p></p>
-        </div><-->
-        <div>
-            <h2><u>Education</u></h2>
-            <p><h3>Arizona State University<time>August 2019-May 2023</time></h3><p style="padding-left:3%">Tempe, Arizona<br>Bachelor of Science in Computer Science</bt></p>
-        </div>
-        <div>
-            <h2><u>Experience</u></h2>
-            <p style="margin-right:50em"><h3 id = "exp">Target<time>November 2019-Present</time></h3></p><p style="padding-left:3%">Goodyear, Arizona - Electronics team member
-                <br><li>Help keep the electronics department of the store secure by assisting with lock cases and helping 
-                with high value items.</li> 
-                <li>Responsible for keeping the shelves stocked and making sure everything 
-                that meet the price point thresholds has the according security device.</li></p>
-        </div>
-        <div>
-            <h2><u>Projects</u></h2>
+    </p>
+</div>
+
+<div class = "projects" id="content2" style="width: 60%;">
+    <p class="contentHeader">Test</p>
+    <p class="contentFill">My name is Francisco Robles and I am a recent graudate from Arizona State University.
+    </p>
+</div>
+
+<div class = "references" id="content3" style="width: 60%;">
+    <p class="contentHeader">Test</p>
+    <p class="contentFill">My name is Francisco Robles and I am a recent graudate from Arizona State University.
+    </p>
+</div>
+
+<div class = "certifications" id="content4" style="width: 60%;">
+    <p class="contentHeader">Test</p>
+    <p class="contentFill">My name is Francisco Robles and I am a recent graudate from Arizona State University.
+    </p>
+</div>
+
+<div class = "contact" id="content5" style="width: 60%;">
+    <p class="contentHeader">Test</p>
+    <p class="contentFill">My name is Francisco Robles and I am a recent graudate from Arizona State University.
+    </p>
+</div>
+</div>
+</body>
+
+<script>
+    var tabNum = 1;
+    var currClass = "";
+    var lastTab = "1";
+
+    
+
+    function lastOpened(){
+        lastTab = sessionStorage.getItem("last");
+        if (lastTab == "1"){
+            goHome();
+        }
+        if (lastTab == "2"){
+            goProjects();
+        } 
+        if (lastTab == "3"){
+            goReferences();
+        } 
+        if (lastTab == "4"){
+            goCertifications();
+        } 
+        if (lastTab == "5"){
+            goContact();
+        }
+
+    }
+
+
+    
+    function goHome() {
+
+        goTab('home');
+        sessionStorage.setItem("last","1");
+        
+        tabNum = 1;
+
+    }
+    
+    function goProjects() {
+
+        goTab('projects');
+        sessionStorage.setItem("last","2");
+        tabNum = 2;
+    }
+
+    function goReferences() {
+
+        goTab('references');
+        sessionStorage.setItem("last","3");
+        tabNum = 3;
+    }
+
+    function goCertifications() {
+
+        goTab('certifications');
+        sessionStorage.setItem("last","4");
+        tabNum = 4;
+    }
+
+    function goContact() {
+
+        goTab('contact');
+        sessionStorage.setItem("last","5");
+        tabNum = 5;
+    }
+
+    function goTab(currTab){
+        checkTab();
+
+        list = document.getElementsByClassName(currTab);
+        while(list.length>0){
+            list[0].className = 'selectedTab';
             
-            <p><h3>Catalytic Converter Alarm System<time>August 2022-May 2023</time></h3></p>
-                <p style="padding-left:3%"><li>Created a catalytic converter alarm system that would arm itself based on vibrations gathered from the mounting location.</li><li>Implemented real time
-                    notifications along with an audible alarm connected to a Raspberry Pi 3 and an accelerometer.</li>
-                <li>Interviewed potential customers and local law enforcement to try and provide the best solution to deter these type of thefts.</li> </p>
-            <p><h3>Web Application (.NET)<time>February 2023</time></h3></p>
-                <p style="padding-left:3%"><li>Created web services in C# using Visual Studio, that would convert fahrenheit to celsius and returned current climate conditions in associated latitude and longitude values.</li>
-                <li>Linked the application to the created services and called the services in order to convert between units and display weather conditions in a simple GUI.</li></p>
-            <p><h3>GSelect Branch Predictor<time>November 2022</time></h3></p>
-                <p style="padding-left:3%"><li>Implemented in a group of 2, a GSelect branch predictor in gem5 with C by comparing the 2-bit local and the bi-mode branch predictors.</li>
-                <li>Analyzed the strengths of the other two branch predictors and created a new branch predictor using these strengths to improve performance of branch prediction.</li></p>
-            <p><h3>PostgreSQL Data Visualization Application<time>August 2022-December 2022</time></h3></p>
-                <p style="padding-left:3%"><li>Using Python and a PostgreSQL server for the database, in a group of 4, made a GUI to be used to visualize COVID-19 data with different graphs.</li>
-                <li>Made PostgreSQL calls to the server and used these calls with the Tkinter, Psycopg2, Pandas, and Matplotlib libraries in Python to create the GUI and demonstrate correct data.</li>
-        </div>
-        <div>
-            <h2><u>Certificates</u></h2>
-            <p style="margin-top:0.5em"><li>Certificate of Arizona Technical Skills Standards - Software Development</li></p>
-        </div>
-        <div>
-            <h2><u>Skills</u></h2>
-            <p style="margin-top:0.5em"><li>Programming languages: C/C++, C#, Python, Java, JavaFX, HTML, Prolog, Scheme, JavaScript, MATLAB, PostgreSQL, R</li>
-                <li>Computer Science: Data structures and algorithms, Agile project management, Scrum management, Service-oriented programming, APIs</li>
-                <li>Frameworks: .NET, jQuery, Node.js</li>
-                <li>Technologies: Visual Studio Code, Visual Studio, RStudio, Eclipse</li></p>
-        </div>
-            </div>
-        </div>
-    </body>
+        }
+
+        var indexN = 0;
+        list = document.getElementsByClassName('selectedTab');
+        while(list.length>indexN){
+            list[indexN].style.visibility = "visible";
+            indexN++;
+        }
+    }
+
+    function checkTab() {
+        var indexN = 0;
+        if(tabNum == 1){
+            currClass = "home";
+        } else if (tabNum == 2){
+            currClass = "projects";
+        } else if (tabNum == 3){
+            currClass = "references";
+        } else if (tabNum == 4){
+            currClass = "certifications";
+        } else {
+            currClass = "contact";
+        }
+
+        list = document.getElementsByClassName('selectedTab');
+        while(list.length>0){
+            list[0].className = currClass;
+        }
+        list = document.getElementsByClassName(currClass);
+        while(list.length>indexN){
+            list[indexN].style.visibility = "hidden";
+            indexN++;
+        }
+    }
+
+</script>
 
 </html>
+

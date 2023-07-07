@@ -1,0 +1,209 @@
+body{
+    
+    overflow-x: hidden;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+#main{
+    position: absolute;
+    width: 100vw;
+    height:100vh;
+    left:0;
+    background-image: url("https://fdrobles.github.io/IMG_3460%20(1).jpg");
+    background-position: center;
+    background-size: 100vw, 100vh;
+    background-repeat: no-repeat;
+    
+
+}
+
+#main>div{
+    width:100vw;
+}
+
+.topHeader{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%; 
+    min-height: 5vh; 
+    background-color: black; 
+}
+
+.navbarHome{
+    font-size:24px;
+    padding-left: .40em;
+    padding-right: .40em;
+    color:gray;
+    text-decoration: none;
+}
+.navbarItems{
+    font-size:18px;
+    padding-left: .40em;
+    padding-right: .40em;
+    color:gray;
+    text-decoration: none;
+}
+
+#nav {
+    width:50vw;
+    left:5vw;
+    top:1%;
+    position:fixed;
+    color: gray;
+}
+
+.aboutMeHeader{
+    position:fixed;
+    background-color: rgba(255,255,255,.50);
+    top:5%;
+    text-align: center;
+    font-size: 48px;
+}
+
+#profilePic {
+    position:absolute;
+    top:4.5%;
+    left: 15vw;
+    border-radius: 50%;
+    border: .25em solid gray;
+
+}
+
+
+
+#contentHeader{
+    position:fixed;
+    background-color: rgba(255,255,255,.50);
+    top:5%;
+    text-align: center;
+    font-size: 48px;
+}
+
+#headerTitle1{
+    position: relative;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+
+}
+
+#subSection1{
+    position: relative;
+    font-size:24px;
+    margin-top: 0%;
+
+}
+
+#headerTitle2{
+    position: absolute;
+    left:44%;
+    top:15%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    visibility: hidden;
+}
+
+#headerTitle3{
+    position: absolute;
+    left:43%;
+    top:15%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    visibility: hidden;
+}
+
+#headerTitle4{
+    position: absolute;
+    left:41%;
+    top:15%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    visibility: hidden;
+}
+
+#headerTitle5{
+    position: absolute;
+    left:42%;
+    top:15%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    visibility: hidden;
+}
+
+#content{
+    position: fixed;
+    background-color: rgba(255,255,255,.50);
+    top:40%;
+    left:20%;
+    text-align: center;
+    
+}
+
+#content2{
+    position: fixed;
+    background-color: rgba(255,255,255,.50);
+    top:40%;
+    left:20%;
+    text-align: center;
+    visibility: hidden;
+}
+
+#content3{
+    position: fixed;
+    background-color: rgba(255,255,255,.50);
+    top:40%;
+    left:20%;
+    text-align: center;
+    visibility: hidden;
+}
+
+#content4{
+    position: fixed;
+    background-color: rgba(255,255,255,.50);
+    top:40%;
+    left:20%;
+    text-align: center;
+    visibility: hidden;
+}
+
+#content5{
+    position: fixed;
+    background-color: rgba(255,255,255,.50);
+    top:40%;
+    left:20%;
+    text-align: center;
+    visibility: hidden;
+}
+
+.contentHeader{
+    position: relative;
+    text-align: left;
+    left:5%;
+    width:45%;
+    font-size: 24px;
+}
+
+.contentFill{
+    position: relative;
+    text-align: left;
+    left:5%;
+    width:90%;
+}
+
+.selected{
+    
+}
+
+.selectedTab {
+    visibility: visible;
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity:1;}
+}
+
+.notSelected{
+    visibility: hidden;
+}
