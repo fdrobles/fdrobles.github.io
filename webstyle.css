@@ -80,6 +80,42 @@ body{
     font-size: 48px;
 }
 
+#contentHeader2{
+    position:fixed;
+    background-color: rgba(255,255,255,.50);
+    top:5%;
+    text-align: center;
+    font-size: 48px;
+    visibility: hidden;
+}
+
+#contentHeader3{
+    position:fixed;
+    background-color: rgba(255,255,255,.50);
+    top:5%;
+    text-align: center;
+    font-size: 48px;
+    visibility: hidden;
+}
+
+#contentHeader4{
+    position:fixed;
+    background-color: rgba(255,255,255,.50);
+    top:5%;
+    text-align: center;
+    font-size: 48px;
+    visibility: hidden;
+}
+
+#contentHeader5{
+    position:fixed;
+    background-color: rgba(255,255,255,.50);
+    top:5%;
+    text-align: center;
+    font-size: 48px;
+    visibility: hidden;
+}
+
 #headerTitle1{
     position: relative;
     margin-top: 0.5%;
@@ -95,39 +131,27 @@ body{
 }
 
 #headerTitle2{
-    position: absolute;
-    left:44%;
-    top:15%;
+    position: relative;
     margin-top: 0.5%;
     margin-bottom: 1%;
-    visibility: hidden;
 }
 
 #headerTitle3{
-    position: absolute;
-    left:43%;
-    top:15%;
+    position: relative;
     margin-top: 0.5%;
     margin-bottom: 1%;
-    visibility: hidden;
 }
 
 #headerTitle4{
-    position: absolute;
-    left:41%;
-    top:15%;
+    position: relative;
     margin-top: 0.5%;
     margin-bottom: 1%;
-    visibility: hidden;
 }
 
 #headerTitle5{
-    position: absolute;
-    left:42%;
-    top:15%;
+    position: relative;
     margin-top: 0.5%;
     margin-bottom: 1%;
-    visibility: hidden;
 }
 
 #content{
