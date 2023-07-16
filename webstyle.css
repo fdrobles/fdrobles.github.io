@@ -63,8 +63,8 @@ body{
 
 #profilePic {
     position:absolute;
-    top:4.5%;
-    left: 15vw;
+    top: 5%;
+    left: 20vw;
     border-radius: 50%;
     border: .25em solid gray;
 
