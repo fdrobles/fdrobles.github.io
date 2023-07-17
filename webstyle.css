@@ -305,14 +305,14 @@ body{
     }
 
     .navbarHome{
-        font-size:.5em;
+        font-size:.45em;
         padding-left: .40em;
         padding-right: .40em;
         color:gray;
         text-decoration: none;
     }
     .navbarItems{
-        font-size:.25em;
+        font-size:.2em;
         padding-left: .40em;
         padding-right: .40em;
         color:gray;
