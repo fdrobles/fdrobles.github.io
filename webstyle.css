@@ -22,7 +22,7 @@ body{
 }
 
 .topHeader{
-    position: fixed;
+    position: absolute;
     top:0;
     left:0;
     width: 100%; 
@@ -49,7 +49,7 @@ body{
     width:50vw;
     left:5vw;
     top:1%;
-    position:fixed;
+    position:absolute;
     color: gray;
 }
 
@@ -67,7 +67,7 @@ body{
 
 
 #contentHeader{
-    position:fixed;
+    position:absolute;
     background-color: rgba(255,255,255,.50);
     top:5%;
     text-align: center;
@@ -75,7 +75,7 @@ body{
 }
 
 #contentHeader2{
-    position:fixed;
+    position:absolute;
     background-color: rgba(255,255,255,.50);
     top:5%;
     text-align: center;
@@ -84,7 +84,7 @@ body{
 }
 
 #contentHeader3{
-    position:fixed;
+    position:absolute;
     background-color: rgba(255,255,255,.50);
     top:5%;
     text-align: center;
@@ -93,7 +93,7 @@ body{
 }
 
 #contentHeader4{
-    position:fixed;
+    position:absolute;
     background-color: rgba(255,255,255,.50);
     top:5%;
     text-align: center;
@@ -102,7 +102,7 @@ body{
 }
 
 #contentHeader5{
-    position:fixed;
+    position:absolute;
     background-color: rgba(255,255,255,.50);
     top:5%;
     text-align: center;
@@ -149,7 +149,7 @@ body{
 }
 
 #content{
-    position: fixed;
+    position: absolute;
     background-color: rgba(255,255,255,.50);
     top:40%;
     left:20%;
@@ -158,7 +158,7 @@ body{
 }
 
 #content2{
-    position: fixed;
+    position: absolute;
     background-color: rgba(255,255,255,.50);
     top:40%;
     left:20%;
@@ -167,7 +167,7 @@ body{
 }
 
 #content3{
-    position: fixed;
+    position: absolute;
     background-color: rgba(255,255,255,.50);
     top:40%;
     left:20%;
@@ -176,7 +176,7 @@ body{
 }
 
 #content4{
-    position: fixed;
+    position: absolute;
     background-color: rgba(255,255,255,.50);
     top:40%;
     left:20%;
@@ -185,7 +185,7 @@ body{
 }
 
 #content5{
-    position: fixed;
+    position: absolute;
     background-color: rgba(255,255,255,.50);
     top:40%;
     left:20%;
@@ -308,7 +308,7 @@ body{
         width:100vw;
         left:5vw;
         top:1%;
-        position:fixed;
+        position:absolute;
         color: gray;
     }
 
@@ -328,7 +328,7 @@ body{
     }
 
     #contentHeader{
-        position:fixed;
+        position:absolute;
         background-color: rgba(255,255,255,.50);
         top:5%;
         text-align: center;
@@ -336,7 +336,7 @@ body{
     }
     
     #contentHeader2{
-        position:fixed;
+        position:absolute;
         background-color: rgba(255,255,255,.50);
         top:5%;
         text-align: center;
@@ -345,7 +345,7 @@ body{
     }
     
     #contentHeader3{
-        position:fixed;
+        position:absolute;
         background-color: rgba(255,255,255,.50);
         top:5%;
         text-align: center;
@@ -354,7 +354,7 @@ body{
     }
     
     #contentHeader4{
-        position:fixed;
+        position:absolute;
         background-color: rgba(255,255,255,.50);
         top:5%;
         text-align: center;
@@ -363,7 +363,7 @@ body{
     }
     
     #contentHeader5{
-        position:fixed;
+        position:absolute;
         background-color: rgba(255,255,255,.50);
         top:5%;
         text-align: center;
