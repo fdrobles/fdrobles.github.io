@@ -304,6 +304,14 @@ body{
         scale: 0.5;
     }
 
+    #nav {
+        width:100vw;
+        left:5vw;
+        top:1%;
+        position:fixed;
+        color: gray;
+    }
+
     .navbarHome{
         font-size:.45em;
         padding-left: .40em;
