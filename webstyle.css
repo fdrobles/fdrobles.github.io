@@ -11,7 +11,7 @@ body{
     left:0;
     background-image: url("https://fdrobles.github.io/IMG_3460%20(1).jpg");
     background-position: center;
-    background-size: 100vw, 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
     
 
@@ -31,14 +31,14 @@ body{
 }
 
 .navbarHome{
-    font-size:24px;
+    font-size:1.5em;
     padding-left: .40em;
     padding-right: .40em;
     color:gray;
     text-decoration: none;
 }
 .navbarItems{
-    font-size:18px;
+    font-size:1.125em;
     padding-left: .40em;
     padding-right: .40em;
     color:gray;
@@ -53,21 +53,15 @@ body{
     color: gray;
 }
 
-.aboutMeHeader{
-    position:fixed;
-    background-color: rgba(255,255,255,.50);
-    top:5%;
-    text-align: center;
-    font-size: 48px;
-}
+
 
 #profilePic {
     position:absolute;
-    top: 5%;
+    top: 5.5%;
     left: 20vw;
     border-radius: 50%;
     border: .25em solid gray;
-
+    scale: 0.75em;
 }
 
 
@@ -77,7 +71,7 @@ body{
     background-color: rgba(255,255,255,.50);
     top:5%;
     text-align: center;
-    font-size: 48px;
+    font-size: 3em;
 }
 
 #contentHeader2{
@@ -85,7 +79,7 @@ body{
     background-color: rgba(255,255,255,.50);
     top:5%;
     text-align: center;
-    font-size: 48px;
+    font-size: 3em;
     visibility: hidden;
 }
 
@@ -94,7 +88,7 @@ body{
     background-color: rgba(255,255,255,.50);
     top:5%;
     text-align: center;
-    font-size: 48px;
+    font-size: 3em;
     visibility: hidden;
 }
 
@@ -103,7 +97,7 @@ body{
     background-color: rgba(255,255,255,.50);
     top:5%;
     text-align: center;
-    font-size: 48px;
+    font-size: 3em;
     visibility: hidden;
 }
 
@@ -112,7 +106,7 @@ body{
     background-color: rgba(255,255,255,.50);
     top:5%;
     text-align: center;
-    font-size: 48px;
+    font-size: 3em;
     visibility: hidden;
 }
 
@@ -125,7 +119,7 @@ body{
 
 #subSection1{
     position: relative;
-    font-size:24px;
+    font-size: .5em;
     margin-top: 0%;
 
 }
@@ -204,7 +198,7 @@ body{
     text-align: left;
     left:5%;
     width:45%;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 .contentFill{
@@ -230,4 +224,158 @@ body{
 
 .notSelected{
     visibility: hidden;
+}
+
+@media (max-width: 1100px) {
+    #main{
+        position: absolute;
+        width: 100vw;
+        height:100vh;
+        left:0;
+        background-image: url("https://fdrobles.github.io/IMG_3460%20(1).jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    
+    }
+
+    #profilePic {
+        position:absolute;
+        top: 5%;
+        left: 5vw;
+        border-radius: 50%;
+        border: .25em solid gray;
+        scale: 0.75;
+    }
+
+    .navbarHome{
+        font-size:1em;
+        padding-left: .40em;
+        padding-right: .40em;
+        color:gray;
+        text-decoration: none;
+    }
+    .navbarItems{
+        font-size:.75em;
+        padding-left: .40em;
+        padding-right: .40em;
+        color:gray;
+        text-decoration: none;
+    }
+
+    .contentHeader{
+        position: relative;
+        text-align: left;
+        left:5%;
+        width:45%;
+        font-size: 1.5em;
+    }
+    
+    .contentFill{
+        position: relative;
+        text-align: left;
+        left:5%;
+        width:90%;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #main{
+        position: absolute;
+        width: 100vw;
+        height:100vh;
+        left:0;
+        background-image: url("https://fdrobles.github.io/IMG_3460%20(1).jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    
+    }
+
+    #profilePic {
+        position:absolute;
+        top: 2.5%;
+        left: .5vw;
+        border-radius: 50%;
+        border: .25em solid gray;
+        scale: 0.5;
+    }
+
+    .navbarHome{
+        font-size:.5em;
+        padding-left: .40em;
+        padding-right: .40em;
+        color:gray;
+        text-decoration: none;
+    }
+    .navbarItems{
+        font-size:.25em;
+        padding-left: .40em;
+        padding-right: .40em;
+        color:gray;
+        text-decoration: none;
+    }
+
+    #contentHeader{
+        position:fixed;
+        background-color: rgba(255,255,255,.50);
+        top:5%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+    #contentHeader2{
+        position:fixed;
+        background-color: rgba(255,255,255,.50);
+        top:5%;
+        text-align: center;
+        font-size: 1.5em;
+        visibility: hidden;
+    }
+    
+    #contentHeader3{
+        position:fixed;
+        background-color: rgba(255,255,255,.50);
+        top:5%;
+        text-align: center;
+        font-size: 1.5em;
+        visibility: hidden;
+    }
+    
+    #contentHeader4{
+        position:fixed;
+        background-color: rgba(255,255,255,.50);
+        top:5%;
+        text-align: center;
+        font-size: 1.5em;
+        visibility: hidden;
+    }
+    
+    #contentHeader5{
+        position:fixed;
+        background-color: rgba(255,255,255,.50);
+        top:5%;
+        text-align: center;
+        font-size: 1.5em;
+        visibility: hidden;
+    }
+
+    .contentHeader{
+        position: relative;
+        text-align: left;
+        left:5%;
+        width:45%;
+        font-size: .75em;
+    }
+    
+    .contentFill{
+        position: relative;
+        text-align: left;
+        left:5%;
+        width:90%;
+        font-size: .5em;
+    }
 }
