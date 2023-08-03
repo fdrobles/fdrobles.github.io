@@ -2,19 +2,20 @@ body{
     
     overflow-x: hidden;
     margin-bottom: 0%;
-    margin-top: 0%;
+    margin-top: 0%;   
 }
+
 #main{
     position: absolute;
     width: 100vw;
-    height:100vh;
+    min-height:100vh;
     left:0;
+    overflow-x: hidden;
+    overflow-y: auto;
     background-image: url("https://fdrobles.github.io/IMG_3460%20(1).jpg");
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    
-
 }
 
 #main>div{
@@ -66,44 +67,44 @@ body{
 
 
 
-#contentHeader{
+#header{
     position:absolute;
-    background-color: rgba(255,255,255,.50);
+    background-color: rgba(255,255,255,.70);
     top:5%;
     text-align: center;
     font-size: 3em;
 }
 
-#contentHeader2{
+#header2{
     position:absolute;
-    background-color: rgba(255,255,255,.50);
-    top:5%;
-    text-align: center;
-    font-size: 3em;
-    visibility: hidden;
-}
-
-#contentHeader3{
-    position:absolute;
-    background-color: rgba(255,255,255,.50);
+    background-color: rgba(255,255,255,.70);
     top:5%;
     text-align: center;
     font-size: 3em;
     visibility: hidden;
 }
 
-#contentHeader4{
+#header3{
     position:absolute;
-    background-color: rgba(255,255,255,.50);
+    background-color: rgba(255,255,255,.70);
     top:5%;
     text-align: center;
     font-size: 3em;
     visibility: hidden;
 }
 
-#contentHeader5{
+#header4{
     position:absolute;
-    background-color: rgba(255,255,255,.50);
+    background-color: rgba(255,255,255,.70);
+    top:5%;
+    text-align: center;
+    font-size: 3em;
+    visibility: hidden;
+}
+
+#header5{
+    position:absolute;
+    background-color: rgba(255,255,255,.70);
     top:5%;
     text-align: center;
     font-size: 3em;
@@ -150,7 +151,7 @@ body{
 
 #content{
     position: absolute;
-    background-color: rgba(255,255,255,.50);
+    background-color: rgba(255,255,255,.70);
     top:40%;
     left:20%;
     text-align: center;
@@ -159,7 +160,7 @@ body{
 
 #content2{
     position: absolute;
-    background-color: rgba(255,255,255,.50);
+    background-color: rgba(255,255,255,.70);
     top:40%;
     left:20%;
     text-align: center;
@@ -168,7 +169,7 @@ body{
 
 #content3{
     position: absolute;
-    background-color: rgba(255,255,255,.50);
+    background-color: rgba(255,255,255,.70);
     top:40%;
     left:20%;
     text-align: center;
@@ -177,7 +178,7 @@ body{
 
 #content4{
     position: absolute;
-    background-color: rgba(255,255,255,.50);
+    background-color: rgba(255,255,255,.70);
     top:40%;
     left:20%;
     text-align: center;
@@ -186,7 +187,7 @@ body{
 
 #content5{
     position: absolute;
-    background-color: rgba(255,255,255,.50);
+    background-color: rgba(255,255,255,.60);
     top:40%;
     left:20%;
     text-align: center;
@@ -197,7 +198,7 @@ body{
     position: relative;
     text-align: left;
     left:5%;
-    width:45%;
+    width:90%;
     font-size: 1.5em;
 }
 
@@ -206,10 +207,6 @@ body{
     text-align: left;
     left:5%;
     width:90%;
-}
-
-.selected{
-    
 }
 
 .selectedTab {
@@ -232,6 +229,8 @@ body{
         width: 100vw;
         height:100vh;
         left:0;
+        overflow-x: hidden;
+        overflow-y: auto;
         background-image: url("https://fdrobles.github.io/IMG_3460%20(1).jpg");
         background-position: center;
         background-size: cover;
@@ -287,6 +286,8 @@ body{
         width: 100vw;
         height:100vh;
         left:0;
+        overflow-x: hidden;
+        overflow-y: auto;
         background-image: url("https://fdrobles.github.io/IMG_3460%20(1).jpg");
         background-position: center;
         background-size: cover;
